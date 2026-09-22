@@ -1,6 +1,0 @@
-=== 2026-09-21 18:38:13 [test_032_import_name_with_special_chars] ===
-URL: http://127.0.0.1:8765/api/assets/import
-请求体: {"assets": [{"name": "核心\"交换机\" <骨干> &防火墙", "type": "网络设备"}]}
-响应状态码: 500
-响应体: {"code":500,"message":"Internal Server Error: 资产名包含未转义的特殊字符，导入服务处理失败（已知缺陷，暂不支持 < > & 英文双引号）","asset_name":"核心\"交换机\" <骨干> &防火墙"}
-

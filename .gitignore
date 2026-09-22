@@ -11,3 +11,8 @@ results/
 
 # macOS
 .DS_Store
+
+# 根目录散落产物防误提交（正本在 results/ 与 logs/）
+/api_failures.log
+/report.json
+/report.md
