@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>资产导入 - 中台资产管理平台</title>
+  <style>
+    body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; margin: 0; color: #1f2329; }
+    header { background: #3370ff; color: #fff; padding: 16px 32px; }
+    h1 { margin: 0; font-size: 22px; }
+    nav { padding: 12px 32px; border-bottom: 1px solid #e5e6eb; }
+    nav a { margin-right: 24px; color: #3370ff; text-decoration: none; }
+    main { padding: 24px 32px; max-width: 560px; }
+    label { display: block; margin: 12px 0 4px; }
+    input, select { width: 100%; padding: 8px; box-sizing: border-box; }
+    button { margin-top: 16px; padding: 8px 24px; background: #3370ff; color: #fff; border: none; border-radius: 4px; }
+    .tip { margin-top: 16px; color: #b26a00; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>资产导入</h1>
+  </header>
+  <nav>
+    <a href="/index.html">首页</a>
+    <a href="/assets.html">资产列表</a>
+    <a href="/import.html">资产导入</a>
+  </nav>
+  <main>
+    <form id="import-form">
+      <label for="asset-name">资产名称</label>
+      <input id="asset-name" name="name" type="text" placeholder="请输入资产名称">
+      <label for="asset-type">资产类型</label>
+      <select id="asset-type" name="type">
+        <option value="network">网络设备</option>
+        <option value="server">服务器</option>
+        <option value="terminal">终端设备</option>
+        <option value="office">办公设备</option>
+      </select>
+      <button id="submit-btn" type="button">开始导入</button>
+    </form>
+    <p class="tip" id="tip">提示：资产名暂不支持 &lt; &gt; &amp; 英文双引号等特殊字符（已知缺陷）。</p>
+  </main>
+</body>
+</html>
